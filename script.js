@@ -65,7 +65,7 @@ async function mostrarNaves(num){
 btnBuscar.addEventListener("click", (evento)=>{
     evento.preventDefault()
     let num = campoBusca
-    if(num.value != "" && num.value >=1 && num.value <=10){
+    if(num.value != "" && num.value >=0 && num.value <=9){
         mostrarNaves(num.value)
         console.log(num.value)
     }
